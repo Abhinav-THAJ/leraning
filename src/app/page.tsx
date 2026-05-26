@@ -29,7 +29,7 @@ export default async function HomePage() {
     { name: "Akshay Dr", role: "Managing Director", desc: "Expert in strategy and institutional trading mentorship.", image: "https://api.dicebear.com/9.x/avataaars/svg?seed=AkshayDr&backgroundColor=b6e3f4&clothingColor=262e33&accessories=prescription01&clothingGraphic=bear&eyes=default&eyebrows=defaultNatural&mouth=smile&skinColor=ae5d29" },
     { name: "Akash Dr", role: "Director", desc: "Specialist in technical analysis and market algorithms.", image: "https://api.dicebear.com/9.x/avataaars/svg?seed=AkashDr2&backgroundColor=c0aede&clothingColor=3c4f5c&accessories=prescription02&eyes=happy&eyebrows=raisedExcitedNatural&mouth=smile&skinColor=614335" },
     { name: "Anoop Gangan", role: "Director", desc: "Connecting aspiring traders with high-quality education.", image: "https://api.dicebear.com/9.x/avataaars/svg?seed=AnoopGangan&backgroundColor=d1d4f9&clothingColor=1a1a2e&accessories=kurt&eyes=default&eyebrows=defaultNatural&mouth=twinkle&skinColor=ae5d29" },
-    { name: "Devagopal Nair", role: "Director", desc: "Driving ITTA's growth and operational excellence.", image: "https://api.dicebear.com/9.x/avataaars/svg?seed=DevagopalNair&backgroundColor=ffd5dc&clothingColor=3d2c8d&accessories=sunglasses&eyes=winkWacky&eyebrows=raisedExcited&mouth=smile&skinColor=614335" },
+    { name: "Dev Nair", role: "Director", desc: "Driving ITTA's growth and operational excellence.", image: "https://api.dicebear.com/9.x/avataaars/svg?seed=DevagopalNair&backgroundColor=ffd5dc&clothingColor=3d2c8d&accessories=sunglasses&eyes=winkWacky&eyebrows=raisedExcited&mouth=smile&skinColor=614335" },
   ];
 
   const edge = [
