@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useState } from "react";
+import { useEffect, useState, Suspense } from "react";
 import { useSearchParams, useRouter } from "next/navigation";
 import { motion } from "framer-motion";
 import { createClient } from "@/utils/supabase/client";
@@ -28,6 +28,18 @@ const INCLUDED_FEATURES = [
 ];
 
 export default function CheckoutPage() {
+  return (
+    <Suspense fallback={
+      <main className="min-h-screen bg-[#060B17] flex items-center justify-center">
+        <Loader2 className="animate-spin text-brand-blue" size={32} />
+      </main>
+    }>
+      <CheckoutContent />
+    </Suspense>
+  );
+}
+
+function CheckoutContent() {
   const searchParams = useSearchParams();
   const router = useRouter();
   const courseId = searchParams.get("courseId");
