@@ -3,6 +3,7 @@
 import { useState } from "react";
 import { useRouter } from "next/navigation";
 import Link from "next/link";
+import Image from "next/image";
 import { motion } from "framer-motion";
 import { createClient } from "@/utils/supabase/client";
 import { Eye, EyeOff, Loader2 } from "lucide-react";
@@ -56,8 +57,7 @@ export default function LoginPage() {
         <div className="glass-card rounded-2xl p-8 md:p-10">
           <div className="text-center mb-8">
             <Link href="/" className="inline-flex items-center gap-2 mb-6">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center text-white font-bold text-lg">I</div>
-              <span className="text-xl font-bold">ITTA Academy</span>
+              <Image src="/Logo.png" alt="ITTA Logo" width={140} height={40} className="object-contain h-10 w-auto" />
             </Link>
             <h1 className="text-2xl font-bold mb-2">Welcome back</h1>
             <p className="text-white/60 text-sm">Sign in to continue learning</p>

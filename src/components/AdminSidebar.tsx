@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { usePathname } from "next/navigation";
 import {
   LayoutDashboard, BookOpen, Users, CreditCard, LogOut,
@@ -78,9 +79,7 @@ export default function AdminSidebar() {
       <div className={clsx("flex items-center justify-between p-4 border-b border-white/5", collapsed && "justify-center")}>
         {!collapsed && (
           <div className="flex items-center gap-2">
-            <div className="w-7 h-7 rounded-lg bg-gradient-to-tr from-amber-500 to-orange-600 flex items-center justify-center">
-              <ShieldCheck size={14} className="text-black" />
-            </div>
+            <Image src="/Logo.png" alt="ITTA Logo" width={32} height={32} className="object-contain h-8 w-auto drop-shadow-sm" />
             <div>
               <div className="text-xs font-bold text-white">Super Admin</div>
               <div className="text-[10px] text-white/30">ITTA Academy</div>

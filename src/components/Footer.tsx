@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 
 const quickLinks = [
@@ -26,8 +27,13 @@ export default function Footer() {
           {/* Brand */}
           <div className="lg:col-span-1">
             <Link href="/" className="flex items-center gap-2 mb-4">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-br from-amber-500 to-orange-600 flex items-center justify-center text-black font-black text-sm">I</div>
-              <span className="font-black text-lg tracking-tight text-white">ITTA<span className="text-amber-400">.</span></span>
+              <Image 
+                src="/Logo.png" 
+                alt="ITTA Academy Logo" 
+                width={140} 
+                height={50} 
+                className="object-contain h-12 w-auto drop-shadow-md"
+              />
             </Link>
             <p className="text-white/40 text-sm leading-relaxed mb-6">
               ITTA – International Trading Training Academy is a premier institution dedicated to providing

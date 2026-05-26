@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import Image from "next/image";
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Menu, X, ChevronRight, LayoutDashboard, LogOut, User } from "lucide-react";
@@ -59,9 +60,11 @@ export default function Navbar() {
   };
 
   const navLinks = [
-    { name: "Courses", href: "/courses" },
+    { name: "Home", href: "/" },
+    { name: "Course", href: "/courses" },
     { name: "About", href: "/about" },
-    { name: "Contact", href: "/contact" },
+    { name: "Service", href: "/service" },
+    { name: "Contact Us", href: "/contact" },
   ];
 
   const displayName = profile?.full_name || user?.email?.split("@")[0] || "Account";
@@ -78,10 +81,14 @@ export default function Navbar() {
         <div className="container mx-auto px-6 md:px-12 flex items-center justify-between">
           {/* Logo */}
           <Link href="/" className="relative z-50 flex items-center gap-2 group">
-            <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-brand-blue to-brand-purple flex items-center justify-center text-white font-bold text-lg shadow-lg">
-              I
-            </div>
-            <span className="text-xl font-bold tracking-tight text-white">ITTA Academy</span>
+            <Image 
+              src="/Logo.png" 
+              alt="ITTA Academy Logo" 
+              width={160} 
+              height={60} 
+              className="object-contain h-14 w-auto drop-shadow-md"
+              priority
+            />
           </Link>
 
           {/* Desktop Nav Links */}

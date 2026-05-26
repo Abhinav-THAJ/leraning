@@ -50,8 +50,11 @@ export default function ContactPage() {
       {/* ── HERO ─────────────────────────────────────── */}
       <section className="relative pt-36 pb-20 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute top-0 left-1/3 w-[500px] h-[350px] bg-amber-500/8 rounded-full blur-[130px]" />
-          <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-blue-500/8 rounded-full blur-[110px]" />
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?q=80&w=2072&auto=format&fit=crop" alt="Contact ITTA" className="absolute inset-0 w-full h-full object-cover opacity-20 mix-blend-screen" />
+          <div className="absolute inset-0 bg-gradient-to-b from-[#060B17]/95 via-[#080D1E]/80 to-[#060B17]" />
+          <div className="absolute top-0 left-1/3 w-[500px] h-[350px] bg-amber-500/10 rounded-full blur-[130px]" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[300px] bg-blue-500/10 rounded-full blur-[110px]" />
         </div>
         <div className="relative z-10 container mx-auto px-6 md:px-12 max-w-3xl text-center">
           <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-400 text-xs font-semibold uppercase tracking-widest mb-8">
@@ -88,6 +91,28 @@ export default function ContactPage() {
                 <div key={i}>{inner}</div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* ── ACADEMY IMAGE BANNER ──────────────────────── */}
+      <section className="py-10">
+        <div className="container mx-auto px-6 md:px-12 max-w-6xl">
+          <div className="relative rounded-3xl overflow-hidden h-52 md:h-64 border border-white/10">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="https://images.unsplash.com/photo-1560472354-b33ff0c44a43?w=1400&auto=format&fit=crop&q=80"
+              alt="ITTA Academy Office"
+              className="w-full h-full object-cover"
+            />
+            <div className="absolute inset-0 bg-gradient-to-r from-[#060B17]/90 via-[#060B17]/50 to-transparent" />
+            <div className="absolute inset-0 flex items-center px-10">
+              <div>
+                <p className="text-amber-400 text-xs font-semibold uppercase tracking-widest mb-2">Visit Us</p>
+                <h3 className="text-2xl md:text-3xl font-black mb-1">ITTA Academy HQ</h3>
+                <p className="text-white/60 text-sm">1st Floor, Relcon Plaza, Pattom, Thiruvananthapuram, Kerala</p>
+              </div>
+            </div>
           </div>
         </div>
       </section>
