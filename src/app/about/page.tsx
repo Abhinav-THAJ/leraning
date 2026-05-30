@@ -16,10 +16,10 @@ const stats = [
 ];
 
 const leaders = [
-  { name: "Akshay Dr", role: "Managing Director", desc: "Expert in strategy and institutional trading mentorship. Leads the vision and execution of ITTA Academy.", image: "https://api.dicebear.com/9.x/micah/svg?seed=AkshayDr&backgroundColor=transparent", color: "from-amber-500/25 to-orange-600/10" },
-  { name: "Akash Dr", role: "Director", desc: "Specialist in technical analysis and market algorithms. Architects ITTA's core trading curriculum.", image: "https://api.dicebear.com/9.x/micah/svg?seed=AkashDr&backgroundColor=transparent", color: "from-blue-500/20 to-blue-700/10" },
-  { name: "Anoop Gangan", role: "Director", desc: "Connecting aspiring traders with high-quality education and bridging the gap between theory and markets.", image: "https://api.dicebear.com/9.x/micah/svg?seed=AnoopGangan&backgroundColor=transparent", color: "from-purple-500/20 to-purple-700/10" },
-  { name: "Dev Nair", role: "Director", desc: "Driving ITTA's growth, operations, and student success outcomes across all programs.", image: "https://api.dicebear.com/9.x/micah/svg?seed=DevagopalNair&backgroundColor=transparent", color: "from-green-500/20 to-emerald-700/10" },
+  { name: "Akshay Dr", role: "Managing Director", desc: "Expert in strategy and institutional trading mentorship. Leads the vision and execution of ITTA Academy.", image: "/images/team/manager_akshay.png", color: "from-amber-500/25 to-orange-600/10" },
+  { name: "Akash Dr", role: "Director", desc: "Specialist in technical analysis and market algorithms. Architects ITTA's core trading curriculum.", image: "/images/team/manager_akash.png", color: "from-blue-500/20 to-blue-700/10" },
+  { name: "Anoop Gangan", role: "Director", desc: "Connecting aspiring traders with high-quality education and bridging the gap between theory and markets.", image: "/images/team/manager_anoop.png", color: "from-purple-500/20 to-purple-700/10" },
+  { name: "Dev Nair", role: "Director", desc: "Driving ITTA's growth, operations, and student success outcomes across all programs.", image: "/images/team/manager_dev.png", color: "from-green-500/20 to-emerald-700/10" },
 ];
 
 const edge = [
