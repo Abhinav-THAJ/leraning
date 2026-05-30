@@ -41,13 +41,7 @@ export default async function HomePage() {
     { icon: Zap, title: "Practical Focus", desc: "No theory fluff. Every lesson ties directly to real trade setups and market context." },
   ];
 
-  const fallbackCourses = [
-    { id: "1", title: "Forex Trading Masterclass", description: "Learn currency market fundamentals, price action, and live trading strategies.", price: 25000, slug: "forex-trading-masterclass", img: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=600&auto=format&fit=crop&q=60" },
-    { id: "2", title: "Stock Market Professional", description: "Understand investing, intraday trading, and portfolio management.", price: 25000, slug: "stock-market-professional", img: "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&auto=format&fit=crop&q=60" },
-    { id: "3", title: "Crypto Trading Masterclass", description: "Master cryptocurrency markets, volatility management, and trading strategies.", price: 25000, slug: "crypto-trading-masterclass", img: "https://images.unsplash.com/photo-1621761191319-c6fb62004040?w=600&auto=format&fit=crop&q=60" },
-  ];
-
-  const displayCourses = (courses && courses.length > 0) ? courses : fallbackCourses;
+  const displayCourses = courses || [];
 
   return (
     <main className="min-h-screen bg-[#060B17] text-white overflow-x-hidden">
@@ -189,7 +183,7 @@ export default async function HomePage() {
                 <div className="relative h-44 overflow-hidden">
                   {/* eslint-disable-next-line @next/next/no-img-element */}
                   <img
-                    src={(course as any).img || `https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&auto=format&fit=crop&q=60`}
+                    src={course.thumbnail_url || `https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=600&auto=format&fit=crop&q=60`}
                     alt={course.title}
                     className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                   />
