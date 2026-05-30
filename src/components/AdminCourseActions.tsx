@@ -31,7 +31,8 @@ export default function AdminCourseActions({
       setIsPublished(!isPublished);
       router.refresh();
     } else {
-      alert("Failed to update course. Make sure SUPABASE_SERVICE_ROLE_KEY is set in .env.local");
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to update course: ${data.error || res.statusText || "Make sure SUPABASE_SERVICE_ROLE_KEY is set in your production environment variables."}`);
     }
     setPublishing(false);
   };
@@ -42,7 +43,8 @@ export default function AdminCourseActions({
     if (res.ok) {
       router.refresh();
     } else {
-      alert("Failed to delete course. Make sure SUPABASE_SERVICE_ROLE_KEY is set in .env.local");
+      const data = await res.json().catch(() => ({}));
+      alert(`Failed to delete course: ${data.error || res.statusText || "Make sure SUPABASE_SERVICE_ROLE_KEY is set in your production environment variables."}`);
       setDeleting(false);
       setShowConfirm(false);
     }
