@@ -14,7 +14,6 @@ async function ensureBucket(admin: ReturnType<typeof getAdmin>) {
   if (!exists) {
     await admin.storage.createBucket("course-videos", {
       public: true,
-      fileSizeLimit: 5368709120, // 5 GB
       allowedMimeTypes: ["video/*"],
     });
   }
